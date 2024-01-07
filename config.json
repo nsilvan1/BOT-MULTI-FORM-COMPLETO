@@ -1,0 +1,32 @@
+{
+
+  "TOKEN": "TOKENAQUI", 
+
+  "ipBanco": "127.0.0.1",
+  "userBanco": "root",
+  "passBanco": "" ,
+  "nomedatabase": "formulario",
+
+  "QUESTION": {
+    "QUESTION-1": "Qual seu nome e idade REAL? Utilize o formato `Joao Silva - 01/01/9999`",
+    "QUESTION-2": "Qual o nome do seu personagem e o ID na cidade? Utilize o formato `Joao Silva | 99`",
+    "QUESTION-3": "Você é criador de conteúdo? Se sim, deixe o link da sua live abaixo.",
+    "QUESTION-4": "Durante uma abordagem, você se encontra na necessidade de averiguar os itens portados por um indivíduo do sexo oposto. O que faria?",
+    "QUESTION-5": "Diante de uma denúncia de roubo á caixa registradora, qual seria sua modulação?",
+    "QUESTION-6": "Em que momento pode ser liberado o código 5 no pneu de um veículo?",
+    "QUESTION-7": "Durante sua PTR, você avista quatro indivíduos com arma na mão dropados. Qual seria sua reação?",
+    "QUESTION-8": "Durante uma revista, você encontra itens denominados `peças de arma` com o indivíduo. O você que faria?",
+    "QUESTION-9": "Já teve experiência como Policial? Se sim, qual?",
+    "QUESTION-10": "Você conhece ou tem algum conhecimento das regras da cidade, mesmo que pouco?",
+    "QUESTION-11": "Porque deseja adentrar a corporação da Polícia Civil?",
+    "QUESTION-12": "Qual a função da Polícia Civil? Explique o que ela faz.",
+    "QUESTION-13": "Porque devemos recrutar você e não outra pessoa?",
+    "QUESTION-14": "Quais os requisitos para ser um bom Policial?",
+    "QUESTION-15": "Você tem conhecimento do código Q? Se sim, cite alguns.",
+    "QUESTION-16": "O que você acha das regras da Policia na cidade?",
+    "QUESTION-17": "Você entende que está sujeito a um recrutamento filtrado e que deve seguir todas as regras da cidade e da polícia afim de evitar qualquer punição, e que também existe uma hierarquia a ser seguida. Você concorda?"  }
+
+  }
+
+
+

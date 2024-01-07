@@ -1,0 +1,18 @@
+[] Abrirrec 
+[] addcargo
+[] adv
+[] blacklist
+[] cblacklist
+[] exonerar
+[] fecharrec
+[] hierarquia
+[] limpar
+[] membroscargo
+[OK] Ping
+[] promover
+[] rebaixar
+[] remcargo
+[] verificar
+[OK] Bot verificando se o servidor esta no banco de dados 
+[OK] Ao ser adicionado a um servidor Nome, ID e fica como ativo no banco
+[OK] Ao ser removido do servidor fica como inativo no banco de dados
