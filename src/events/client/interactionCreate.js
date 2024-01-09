@@ -42,8 +42,12 @@ module.exports = class extends Event {
       }
 
       if (!isActive) {
-        return interaction.reply({ content: "Os comandos deste bot estão desativados neste servidor.", ephemeral: true });
-      }
+      return interaction.reply({ 
+        content: `Os comandos estão desativados neste servidor. Por favor, entre em contato com a administração do ${interaction.client.user.username} para mais informações.`,
+        ephemeral: true 
+      });
+    }
+
 
       const cmd = this.client.commands.find(
         (c) => c.name === interaction.commandName
