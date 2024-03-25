@@ -1,7 +1,6 @@
 {
-
   "TOKEN": "MTE3ODg0MDM4NDczMDgyNDcxNQ.G7OJSd.l-BDPmvvELyrs51HJbji_UC1TxQTdcX838kPgg", 
-
+ 
   "ipBanco": "127.0.0.1",
   "userBanco": "root",
   "passBanco": "" ,
@@ -21,7 +20,7 @@
     "QUESTION-11": "Porque deseja adentrar a corporação da Polícia Civil?",
     "QUESTION-12": "Qual a função da Polícia Civil? Explique o que ela faz.",
     "QUESTION-13": "Porque devemos recrutar você e não outra pessoa?",
-    "QUESTION-14": "Quais os requisitos para ser um bom Policial?",
+    "QUESTION-14": "Quais os requisitos para ser um bom Policial?", 
     "QUESTION-15": "Você tem conhecimento do código Q? Se sim, cite alguns.",
     "QUESTION-16": "O que você acha das regras da Policia na cidade?",
     "QUESTION-17": "Você entende que está sujeito a um recrutamento filtrado e que deve seguir todas as regras da cidade e da polícia afim de evitar qualquer punição, e que também existe uma hierarquia a ser seguida. Você concorda?"  }

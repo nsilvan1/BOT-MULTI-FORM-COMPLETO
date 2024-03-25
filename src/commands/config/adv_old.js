@@ -1,15 +1,12 @@
 const { MessageEmbed } = require('discord.js');
-const config = require('../../../config.json');
-const mysql = require('mysql');
-const Command = require("../../structures/Command");
+const config = require('../../../config.json')
 
-// Criar uma conexão com o banco de dados
-const db = mysql.createConnection(config.database);
+const Command = require("../../structures/Command");
 
 module.exports = class AdvCommand extends Command {
   constructor(client) {
     super(client, {
-      name: "adv",
+      name: "adv_old",
       description: "Aplica uma advertência a um membro",
       options: [
         {
@@ -146,31 +143,7 @@ module.exports = class AdvCommand extends Command {
       if (cargo) {
         await membro.roles.add(cargo);
       }
- // Função para inserir um registro de advertência na tabela Advertencias
- const inserirAdvertencia = (serverId, userId, aplicadorId, nivel, motivo, punicao, situacao, timestamp) => {
-  const query = 'INSERT INTO Advertencias (server_id, user_id, level, reason, punishment, status, applied_by, timestamp) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-  const values = [serverId, userId, nivel, motivo, punicao, situacao, aplicadorId, timestamp];
 
-  db.query(query, values, (err, result) => {
-    if (err) {
-      console.error('Erro ao inserir advertência no banco de dados:', err);
-      return;
-    }
-    console.log('Advertência inserida com sucesso:', result.insertId);
-  });
-};
-
-// Inserir o registro de advertência na tabela Advertencias
-inserirAdvertencia(
-  interaction.guild.id, // server_id
-  membro.id,            // user_id
-  aplicador.user.id,    // applied_by
-  nivel,                // level
-  motivo,               // reason
-  punicao,              // punishment
-  situacao,             // status
-  new Date().toISOString() // timestamp
-);
         // Criação do Embed para o Log
         const logEmbed = new MessageEmbed()
         .setTitle(`Comando **${interaction.commandName}** Executado`)
@@ -195,18 +168,10 @@ inserirAdvertencia(
       await interaction.reply({ content: `Advertência aplicada com sucesso`, ephemeral: false });
     } catch (error) {
       console.error("Erro ao aplicar advertência:", error);
-      interaction.reply({
+      return interaction.reply({
         content: "Erro ao aplicar advertência. Verifique as permissões e tente novamente.",
         ephemeral: true,
       });
     }
   };
 };
-
-db.connect(err => {
-  if (err) {
-    console.error('Erro ao conectar ao banco de dados:', err);
-    return;
-  }
-  console.log('Conexão com o banco de dados estabelecida com sucesso.');
-});

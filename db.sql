@@ -54,6 +54,7 @@ ENGINE=InnoDB
 CREATE TABLE ServerSettings (
     server_id VARCHAR(255) PRIMARY KEY,
     server_name VARCHAR(255),
+    ativo VARCHAR(255),
     welcome_channel_id VARCHAR(255),
     rules_channel_id VARCHAR(255),
     logChannelId VARCHAR(255),
@@ -67,5 +68,5 @@ CREATE TABLE ServerRoles (
     role_name VARCHAR(255),
     -- Adicione outras colunas conforme necessário
     PRIMARY KEY (server_id, role_id)
-);
+); 
 ------------------------------------------------------------
